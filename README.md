@@ -96,7 +96,7 @@ Users get a clear understanding of their results, less anxiety, better-prepared 
 CSE4104-7D-T02-MediExplain-AI/
 ├── client/      # Next.js frontend
 ├── server/      # Express.js backend (API, auth, OCR and AI services)
-├── docs/        # Proposal, team information sheet and project documents
+├── docs/        
 └── README.md
 ```
 
