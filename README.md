@@ -63,19 +63,19 @@ Users get a clear understanding of their results, less anxiety, better-prepared 
 
 ---
 
-## Proposed Features
+## Features
 
-- **User authentication:** registration and login, with private data per user
+- **User authentication and profile:** registration, login, profile updates, and password management, with private data per user
 - **Secure report upload:** PDF, JPG and PNG with file type and size validation
-- **OCR text extraction:** test names, values, units and reference ranges
+- **OCR text extraction and validation:** test names, values, units and reference ranges, including fuzzy-matching, plausible-value checks, and an editable review table for users to confirm or correct flagged items
+- **Data de-identification:** automatic removal of personal identifiers before sending data to the AI service to protect user privacy
 - **Range comparison:** automatic High / Low / Normal flags with highlighting
 - **AI explanation:** plain-language explanation per test and an overall summary
 - **AI chat assistant:** follow-up questions answered in the context of the report
 - **Doctor-visit guide:** suggested questions and general health-awareness tips
-- **Report history and dashboard:** saved reports and explanations per user
+- **Report history and data control:** saved reports and explanations per user, including the ability to permanently delete a report and its associated chat history
+- **Admin dashboard:** dedicated panel to manage user accounts, monitor system activity (uploads, AI requests), and generate usage reports
 - **Safety layer:** medical disclaimer, no diagnosis or medication advice, prompt to consult a doctor for abnormal results
-
----
 
 ## Technology Stack
 
