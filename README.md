@@ -4,8 +4,6 @@
 
 MediExplain AI is an AI-powered web application that helps patients understand their medical reports. A user uploads a report (PDF or image), and the system extracts the test results with OCR, checks them against normal reference ranges, and explains each result in simple, everyday language.
 
----
-
 ## Team Information
 
 | | |
@@ -25,21 +23,19 @@ MediExplain AI is an AI-powered web application that helps patients understand t
 | 3 | Md Shazzad Hossain Sayket | 11230121164 | Member |
 | 4 | Mehrab Talha | 11230121206 | Member |
 
----
-
 ## Project Description
 
 ### Problem
 Medical reports (blood tests, lipid profiles, urine tests) are full of technical terms, abbreviations and numeric values that most patients cannot interpret. Patients often wait days for a doctor's appointment, or search the internet and get confusing, inaccurate or frightening information. This causes anxiety, delayed action on abnormal results, and exposure to misinformation, especially for elderly users and people without a medical background.
 
 ### Why existing solutions are not enough
-- **General AI chatbots** are not built for medical reports, give no structured result view and keep no organized report history.
-- **Symptom checkers** work from typed symptoms, not from the user's actual report.
-- **Educational websites** are static and do not explain a user's own results.
+- General AI chatbots are not built for medical reports, give no structured result view and keep no organized report history.
+- Symptom checkers work from typed symptoms, not from the user's actual report.
+- Educational websites are static and do not explain a user's own results.
 
 ### Why AI is needed
-- **OCR and NLP** read reports that come in many formats and layouts, which fixed rules cannot handle.
-- A **Large Language Model** turns medical terminology into plain, personalized explanations and answers follow-up questions.
+- OCR and NLP read reports that come in many formats and layouts, which fixed rules cannot handle.
+- A Large Language Model turns medical terminology into plain, personalized explanations and answers follow-up questions.
 - Results are available instantly, any time of day, helping users prepare better for doctor visits.
 
 ### How it works
@@ -61,10 +57,7 @@ Medical reports (blood tests, lipid profiles, urine tests) are full of technical
 ### Expected Outcome
 Users get a clear understanding of their results, less anxiety, better-prepared doctor visits and an organized history of their reports, all in one workflow instead of waiting or searching the web.
 
----
-
 ## Features
-
 - **User authentication and profile:** registration, login, profile updates, and password management, with private data per user
 - **Secure report upload:** PDF, JPG and PNG with file type and size validation
 - **OCR text extraction and validation:** test names, values, units and reference ranges, including fuzzy-matching, plausible-value checks, and an editable review table for users to confirm or correct flagged items
@@ -81,29 +74,28 @@ Users get a clear understanding of their results, less anxiety, better-prepared 
 
 | Layer | Technology |
 |---|---|
-| **Frontend** | Next.js (React) |
-| **Backend** | Node.js + Express.js (REST API, authentication, file handling) |
-| **Database** | MongoDB |
-| **AI Integration** | OpenAI API (explanations and chat) |
-| **OCR** | Tesseract / Google Cloud Vision |
-| **Deployment** | Vercel (frontend), Render (backend), MongoDB Atlas |
-
----
+| Frontend | Next.js (React) |
+| Backend | Node.js + Express.js (REST API, authentication, file handling) |
+| Database | MongoDB |
+| AI Integration | OpenAI API (explanations and chat) |
+| OCR | Tesseract / Google Cloud Vision |
+| Deployment | Vercel (frontend), Render (backend), MongoDB Atlas |
 
 ## Project Structure
 
 ```
 CSE4104-7D-T02-MediExplain-AI/
-├── client/      # Next.js frontend
-├── server/      # Express.js backend (API, auth, OCR and AI services)
-├── docs/        
+├── frontend/       # Next.js frontend
+├── backend/        # Express.js backend (API, auth, OCR and AI services)
+├── database/       # MongoDB schema and database design
+├── documentation/  # Proposal, SRS, System Design Document, API Design, AI Workflow
+├── diagrams/       # Architecture, ER, Use Case and Activity diagrams
 └── README.md
 ```
 
-## Getting Started
 
+## Getting Started
 Setup and run instructions will be added as development progresses.
 
 ---
-
 **Disclaimer:** MediExplain AI is an educational tool. It does not replace a doctor's diagnosis or treatment advice.
